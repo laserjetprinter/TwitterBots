@@ -7,3 +7,12 @@ command line:
 python <botFileName>
 
 This will make the bot generate a tweet for your account. 
+
+/**************************************************************/
+
+RandomWikiArticle
+
+This bot will tweet a random phrase from an array list and pull a
+random article from wikipedia -- and tweet the combo. 
+
+/**************************************************************/
