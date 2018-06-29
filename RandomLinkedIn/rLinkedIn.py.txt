@@ -1,0 +1,33 @@
+import urllib
+import tweepy
+import random
+from random import randrange
+
+CONSUMER_KEY = "xxx"
+CONSUMER_SECRET = "xxx"
+
+ACCESS_TOKEN = "xxx"
+ACCESS_TOKEN_SECRET = "xxx"
+
+auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET) 
+auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET) 
+
+api = tweepy.API(auth) 
+
+myLinkedIn = get_link('https://www.linkedin.com/in/nataliedaviscsee/')
+
+phraseList = ["I am such a giver! Please hire me.", "Woke up volunteering, what it do? B-)", 
+	"Maybe some day you too will receive an award. Until then, look at mine.", "I am drowning in experience...
+	SOS, lol...jk. I am just trying to say I'm over qualified."]
+
+randomPhrase = randrange(0, len(phraseList))
+
+def switch_method(phrase):
+	switcher = {
+		phraseList[0]: 
+			
+		phraseList[1]:
+		phraseList[2]:
+		phraseList[3]:
+	}
+	return switcher.get(randomPhrase, "Hmm...")
