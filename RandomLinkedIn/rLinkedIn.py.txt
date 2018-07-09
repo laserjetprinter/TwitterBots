@@ -14,7 +14,7 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
 api = tweepy.API(auth) 
 
-myLinkedIn = get_link('https://www.linkedin.com/in/nataliedaviscsee/')
+myLinkedIn = urllib.urlopen('https://www.linkedin.com/in/nataliedaviscsee/')
 
 phraseList = ["I am such a giver! Please hire me.", "Woke up volunteering, what it do? B-)", 
 	"Maybe some day you too will receive an award. Until then, look at mine.", "I am drowning in experience...
